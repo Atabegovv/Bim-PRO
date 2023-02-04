@@ -276,5 +276,47 @@
 
 
 
+.banner{
+  background-color: $bg-secondary;
+  &-wrapper{
+    display: flex;
+    min-height: 636px;
+    position: relative;
+  }
+  &-content{
+    max-width: 583px;
+    width: 100%;
+    padding: 60px 0;
+    &__top{
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 60px;
+    }
+    &__text{
+      max-width: 250px;
+      font-family: $ff-roboto;
+      font-size: 16px;
+      line-height: 20px;
+      margin-left: 15px;
+    }
+    &__title{
+      font-family: $ff-roboto;
+      text-transform: uppercase;
+      font-size: 40px;
+      line-height: 50px;
+      font-weight: 500;
+    }
+  }
+
+  &-img{
+    position: absolute;
+    height: 636px;
+    left: 583px;
+    top: 0;
+  }
+}
+
+
+
 /* media requests */
 @import 'media';
