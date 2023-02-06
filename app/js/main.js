@@ -1,6 +1,6 @@
 'use strict';
 
-let acc = document.getElementsByClassName("accordion");
+  let acc = document.getElementsByClassName("accordion");
   let i;
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
@@ -29,3 +29,35 @@ let acc = document.getElementsByClassName("accordion");
   });
 
 
+  const swiper = new Swiper('.swiper',{
+    navigation:{
+      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next',
+    },
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true,
+    },
+    grabCursor: true,
+    spaceBetween: 30,
+    watchOverflow: true,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      stopOnLastSlide: true,
+      disableOnInteraction: false,
+    },
+    speed: 1000,
+    effect: 'cube',
+    cubeEffect:{
+      slideShadows: true,
+      shadow: true,
+      shadowOffset: 20,
+      shadowScale: 0.95,
+    },
+    // breakpoints:{
+    //   320:{slidesPerview: 1, slidesPerGroup: 1,},
+    //   480:{slidesPerview: 2, slidesPerGroup: 2,},
+    //   990:{slidesPerview: 3, slidesPerGroup: 3,},
+    // },
+  });

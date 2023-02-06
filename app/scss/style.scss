@@ -65,6 +65,7 @@
     border-left: 1px solid $line-white;
     border-right: 1px solid $line-white;
     background-color: $bg-primary;
+    z-index: 2;
     display: none;
     animation: dropdown .5s ease;
   }
@@ -148,6 +149,7 @@
   &-content{
     max-width: 424px;
     margin-right: 30px;
+    padding-bottom: 80px;
     &__title{
       font-family: $ff-roboto;
       font-size: 50px;
@@ -168,13 +170,60 @@
   &-images{
     max-width: 870px;
     width: 100%;
+    min-width: 0;
   }
   &-img{
+    border-radius: 10px;
     width: 100%;
-    max-height: 520px;
+    height: 520px;
     object-fit: cover;
   }
 }
+
+/* slwiper-js */
+.swiper{
+  height: 650px;
+  padding-top: 50px;
+  &-slide{
+    height: 520px;
+    margin-bottom: auto;
+  }
+}
+
+.swiper .swiper-button-prev::after, .swiper .swiper-button-next::after {
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  bottom: 40px;
+}
+.swiper-button-next, .swiper-button-prev {
+  top: var(--swiper-navigation-top-offset,93%);
+}
+.swiper-button-next {
+  right: var(--swiper-navigation-sides-offset,0px);
+  left: auto;
+}
+.swiper-button-prev{
+  left: var(--swiper-navigation-sides-offset,540px);
+  right: auto;
+}
+
+.swiper .swiper-scrollbar-drag {
+  cursor: pointer;
+  background-color: red;    
+  height: 3px;
+}
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+  position: absolute;
+  width: 250px;
+  height: var(--swiper-scrollbar-size,3px);
+  background-color: #fff;
+  bottom: 40px;
+  left: 580px;
+}
+
+/* slwiper-js */
 
 
 

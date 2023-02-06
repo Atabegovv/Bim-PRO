@@ -55,7 +55,7 @@ function scripts(){
         // 'node_modules/@fancyapps/ui/dist/fancybox.umd.js',
         // 'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
         // 'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
-        // 'node_modules/swiper/swiper-bundle.js',
+        'node_modules/swiper/swiper-bundle.js',
         'app/js/main.js'
     ])
     .pipe(concat('scripts.min.js'))
@@ -73,7 +73,7 @@ function styleLibs(){
     // 'node_modules/@fancyapps/ui/dist/fancybox.css',
     // 'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
     // 'node_modules/ion-rangeslider/css/ion.rangeSlider.css',
-    // 'node_modules/swiper/swiper-bundle.css',
+    'node_modules/swiper/swiper-bundle.css',
   ])
     .pipe(concat('libs.min.css'))
     .pipe(cssmin())
