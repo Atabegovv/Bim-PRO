@@ -55,7 +55,7 @@
               <button class="slider-content__btn accent-btn">Рассчитать стоимость проекта</button>
             </div>
             <div class="slider-images">
-              <div class="swiper">
+              <div class="swiper header-swiper">
                 <div class="swiper-wrapper">
                   <!-- Slides -->
                   <div class="swiper-slide">
@@ -280,32 +280,60 @@
         <div class="container">
           <div class="presentation-wrapper">
             <div class="presentation-slider">
-              <img src="images/presentation1.jpg" alt="pre. image">
+              <div class="swiper presentation-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="presentation-slider__img" src="images/presentation1.jpg" alt="pre. image">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="presentation-slider__img" src="images/presentation2.jpg" alt="pre. image">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="presentation-slider__img" src="images/presentation3.jpg" alt="pre. image">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="presentation-slider__img" src="images/presentation4.jpg" alt="pre. image">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="presentation-slider__img" src="images/presentation5.jpg" alt="pre. image">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="presentation-slider__img" src="images/presentation6.jpg" alt="pre. image">
+                  </div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
+
+              </div>
             </div>
             <div class="presentation-content">
               <div class="presentation-content__title">визуализация комплексной застройки</div>
               <div class="content">
                 <ul class="content-list">
                   <li class="content-item">
-                    <h5 class="content-item__title accordion">Застройщику и девелоперу</h5>
+                    <h5 class="content-item__title accordion">Визуализация жилых комплексов</h5>
                     <div class="accordion_panel">
-                      <ul class="content-item__list">наши визуализации помогут:
-                        <li class="content-item__element">повысить продажи</li>
-                        <li class="content-item__element">подробно и наглядно показать, что за продукт они предлагают своим клиентам</li>
-                        <li class="content-item__element">создать визуальный образ проекта</li>
-                        <li class="content-item__element">улучшить имидж компании на рынке за счет портфолио</li>
-                      </ul>
+                      <ul class="content-item__list">Фотореалистичная визуализация любых объектов комплексной застройки от 1 га на основе проектной документации, чертежей или BIM-модели.</ul>
                     </div>
                   </li>
                   <li class="content-item">
-                    <h5 class="content-item__title accordion">Дизайнеру и архитектору</h5>
+                    <h5 class="content-item__title accordion">Визуализация жилых зданий</h5>
                     <div class="accordion_panel">
-                      <ul class="content-item__list">наш продукт поможет:
-                        <li class="content-item__element"> максимально быстро согласовать дизайн-решения с заказчиком и учесть все его пожелания</li>
-                        <li class="content-item__element">увидеть будущую концепцию проекта, внести необходимые изменения на этапе эскизирования</li>
-                        <li class="content-item__element">избежать ошибок на этапе реализации</li>
-                        <li class="content-item__element">пополнить портфолио фотореалистичными визуализациями своих проектов, наиболее полно отражающих уровень своего профессионализма.</li>
-                      </ul>
+                      <ul class="content-item__list">Фотореалистичная визуализация жилых объектов капитального строительства с прилегающей территорией, на площади от 5000 м2 на основе проектной документации, чертежей или BIM-модели.</ul>
+                    </div>
+                  </li>                  
+                  <li class="content-item">
+                    <h5 class="content-item__title accordion">3D, VR и видео материалы</h5>
+                    <div class="accordion_panel">
+                      <ul class="content-item__list">Это способ реалистичного отображения трехмерного пространства, с помощю сферических панорам и возможностью их вращения на 360°. </ul>
+                    </div>
+                  </li>                  
+                  <li class="content-item">
+                    <h5 class="content-item__title accordion">Планировочные схемы</h5>
+                    <div class="accordion_panel">
+                      <ul class="content-item__list">Это графический 2D или 3D материал, представленный в виде оформленного и доработанного чертежа плана. </ul>
                     </div>
                   </li>                  
                 </ul>
@@ -455,17 +483,57 @@
       <section class="smi">
         <div class="container">
           <h3 class="title">сми о нас</h3>
-          <div class="smi-wrapper">
-            <a class="smi-item" href="#">
-              <img class="smi-item__img" src="images/smi1.svg" alt="smi icon">
-              <p class="smi-item__title">Бюджет придаст импульс BIM</p>
-              <p class="smi-item__btn">Читать</p>
-            </a>
-            <a class="smi-item" href="#">
-              <img class="smi-item__img" src="images/smi2.svg" alt="smi icon">
-              <p class="smi-item__title">Социалка не успевает за технологиями</p>
-              <p class="smi-item__btn">Читать</p>
-            </a>
+          <div class="swiper smi-swiper">
+            <div class="smi-wrapper swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="smi-item" href="#">
+                  <img class="smi-item__img" src="images/smi1.svg" alt="smi icon">
+                  <p class="smi-item__title">Бюджет придаст импульс BIM</p>
+                  <p class="smi-item__btn">Читать</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="smi-item" href="#">
+                  <img class="smi-item__img" src="images/smi2.svg" alt="smi icon">
+                  <p class="smi-item__title">Социалка не успевает за технологиями</p>
+                  <p class="smi-item__btn">Читать</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="smi-item" href="#">
+                  <img class="smi-item__img" src="images/smi1.svg" alt="smi icon">
+                  <p class="smi-item__title">Бюджет придаст импульс BIM</p>
+                  <p class="smi-item__btn">Читать</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="smi-item" href="#">
+                  <img class="smi-item__img" src="images/smi2.svg" alt="smi icon">
+                  <p class="smi-item__title">Социалка не успевает за технологиями</p>
+                  <p class="smi-item__btn">Читать</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="smi-item" href="#">
+                  <img class="smi-item__img" src="images/smi1.svg" alt="smi icon">
+                  <p class="smi-item__title">Бюджет придаст импульс BIM</p>
+                  <p class="smi-item__btn">Читать</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="smi-item" href="#">
+                  <img class="smi-item__img" src="images/smi2.svg" alt="smi icon">
+                  <p class="smi-item__title">Социалка не успевает за технологиями</p>
+                  <p class="smi-item__btn">Читать</p>
+                </a>
+              </div>
+            </div>
+            
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+            
           </div>
         </div>
       </section>
@@ -474,8 +542,8 @@
           <div class="query-wrapper">
             <h3 class="title">Оставьте заявку на звонок</h3>
             <form class="query-form">
-              <input class="query-form__input" type="text" placeholder="Имя">
-              <input class="query-form__input" type="number" placeholder="Телефон">
+              <input class="query-form__input" type="text" placeholder="Имя*" required>
+              <input class="query-form__input" type="number" placeholder="Телефон*" required>
               <p class="query-form__text">Нажав на кнопку, я соглашаюсь на обработку <a class="accent-color" href="#">персональных данных</a> </p>
               <button class="query-form__btn accent-btn" type="sumbit">Получить консультацию</button>
             </form>

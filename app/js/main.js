@@ -29,7 +29,7 @@
   });
 
 
-  const swiper = new Swiper('.swiper',{
+  const swiper = new Swiper('.header-swiper',{
     navigation:{
       prevEl: '.swiper-button-prev',
       nextEl: '.swiper-button-next',
@@ -60,4 +60,41 @@
     //   480:{slidesPerview: 2, slidesPerGroup: 2,},
     //   990:{slidesPerview: 3, slidesPerGroup: 3,},
     // },
+  });
+
+  const presentation_swiper = new Swiper('.presentation-swiper',{
+    navigation:{
+      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next',
+    },
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true,
+    },
+    watchOverflow: true,
+    speed: 800,
+    effect: 'fade',
+  });
+
+  const smi_swiper = new Swiper('.smi-swiper',{
+    navigation:{
+      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next',
+    },
+    pagination:{
+      el: '.swiper-pagination',
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + "</span>";
+      },
+      // type: 'progressbar',
+      type: 'fraction',
+    },
+    speed: 800,
+    loop: true,
+    loopedSlides: 2,
+    slidesPerView: 3.2,
+    slidesPerGroup: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
+
   });
