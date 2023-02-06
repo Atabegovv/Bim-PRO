@@ -64,3 +64,17 @@ img {
       background-color: $accent;
    }
 }
+.accent-btn{
+   display: inline-block;
+   width: 100%;
+   height: 70px;
+   line-height: 70px;
+   color: #fff;
+   background-color: $accent;
+   border-radius: 6px;
+   text-align: center;
+   cursor: pointer;
+}
+.text-right{
+   text-align: right;
+}
