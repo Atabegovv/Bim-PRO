@@ -50,10 +50,8 @@
     speed: 1000,
     effect: 'cube',
     cubeEffect:{
-      slideShadows: true,
-      shadow: true,
-      shadowOffset: 20,
-      shadowScale: 0.95,
+      slideShadows: false,
+      shadow: false,
     },
     // breakpoints:{
     //   320:{slidesPerview: 1, slidesPerGroup: 1,},

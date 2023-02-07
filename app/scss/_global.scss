@@ -62,6 +62,8 @@ img {
    transition: all .3s ease;
    &:hover{
       background-color: $accent;
+      border: 2px solid $accent;
+      transform: translate(0px, 2px);
    }
 }
 .accent-btn{
@@ -77,4 +79,12 @@ img {
 }
 .text-right{
    text-align: right;
+}
+.click-effect{
+   transition: all .2s;
+   box-shadow: -11px 10px 20px $bg-secondary;
+   &:hover{
+      transform: translate(2px, 1px);
+      box-shadow: 0 0 0 transparent;
+   }
 }
