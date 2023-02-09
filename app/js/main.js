@@ -96,3 +96,14 @@
     centeredSlides: true,
 
   });
+
+
+  ScrollReveal({ 
+    reset: true,
+    distance: '100px',
+    duration: '3000',
+    delay: '500',
+    easing: 'ease-out',
+  });
+  ScrollReveal().reveal('.slider-images', { delay: 300, origin: 'top' });
+  ScrollReveal().reveal('.slider-content .slider-content__title, .slider-content__text, .slider-content__btn', { delay: 100, origin: 'left', interval: 1000 });
