@@ -107,3 +107,30 @@
   });
   ScrollReveal().reveal('.slider-images', { delay: 300, origin: 'top' });
   ScrollReveal().reveal('.slider-content .slider-content__title, .slider-content__text, .slider-content__btn', { delay: 100, origin: 'left', interval: 1000 });
+
+
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+  smoothLink.addEventListener('click', function (e) {
+    e.preventDefault();
+    const id = smoothLink.getAttribute('href');
+    document.querySelector(id).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
+  });
+};
+
+
+document.querySelector('.burger-menu').onclick = function(){
+  document.querySelector('.nav').classList.toggle('active');
+  document.querySelector('.burger-line').classList.toggle('active');
+};
+document.querySelector('.nav-item').onclick = function(){
+  document.querySelector('.nav').classList.remove('active');
+  document.querySelector('.burger-line').classList.remove('active');
+};
+document.querySelector('.nav').onclick = function(){
+  document.querySelector('.nav').classList.remove('active');
+  document.querySelector('.burger-line').classList.remove('active');
+};

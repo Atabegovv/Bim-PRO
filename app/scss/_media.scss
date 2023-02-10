@@ -1,5 +1,68 @@
 @media (max-width: 1320px){}
-@media (max-width: 1140px){}
+@media (max-width: 1140px){
+  .burger-menu{
+    display: block;
+  }
+  .nav{
+    position: absolute;
+    top: 87px;
+    left: 0;
+    width: 100%;
+    background-color: $bg-secondary;
+    z-index: 20;
+    transition: all .3s ease-out;
+    transform: translateX(100%);
+    &.active{
+      transform: translateX(0);
+    }
+    &-list{
+      display: block;
+      text-align: right;
+    }
+    &-item{
+      margin-right: 0;
+      border-bottom: 1px solid $line-white;
+    }
+    &-link{
+      display: block;
+      padding: 20px 10px;
+      &::after{
+        display: none;
+      }
+    }
+  }
+  .dropdown{
+    &-list{
+      position: static;
+      display: block;
+      min-width: 320px;
+      width: 100%;
+      border: none;
+      text-align: center;
+      animation: dropdown .3s ease-out;
+      z-index: 10;
+    }
+    &-link{
+      padding: 10px 5px;
+      font-size: 16px;
+      border: none;
+      /* &:first-child{
+        border-top: 1px solid $line-white;
+      } */
+    }
+  }
+  @keyframes dropdown {
+    from{
+      transform: translateX(-100%);
+    }  
+    to{
+      transform: translateX(0px);
+    }
+  }
+  .consultation{
+    display: none;
+  }
+}
 @media (max-width: 960px){}
 @media (max-width: 720px){}
 @media (max-width: 540px){}
