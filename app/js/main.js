@@ -53,11 +53,6 @@
       slideShadows: false,
       shadow: false,
     },
-    // breakpoints:{
-    //   320:{slidesPerview: 1, slidesPerGroup: 1,},
-    //   480:{slidesPerview: 2, slidesPerGroup: 2,},
-    //   990:{slidesPerview: 3, slidesPerGroup: 3,},
-    // },
   });
 
   const presentation_swiper = new Swiper('.presentation-swiper',{
@@ -90,10 +85,26 @@
     speed: 800,
     loop: true,
     loopedSlides: 2,
-    slidesPerView: 3.2,
+    // slidesPerView: 3.2,
+    slidesPerView: 1,
     slidesPerGroup: 1,
     spaceBetween: 30,
-    centeredSlides: true,
+    // centeredSlides: true,
+    
+    breakpoints:{
+      450: {
+        slidesPerView: 1.5,
+      },
+      700: {
+        slidesPerView: 2.2,
+      },
+      1050: {
+        slidesPerView: 3,
+      },
+      1350: {
+        slidesPerView: 4,
+      },
+    },
 
   });
 
@@ -106,7 +117,7 @@
     easing: 'ease-out',
   });
   ScrollReveal().reveal('.slider-images', { delay: 300, origin: 'top' });
-  ScrollReveal().reveal('.slider-content .slider-content__title, .slider-content__text, .slider-content__btn', { delay: 100, origin: 'left', interval: 1000 });
+  ScrollReveal().reveal('.slider-content .slider-content__title, .slider-content__text, .slider-content__btn', { delay: 100, origin: 'left', interval: 500 });
 
 
 const smoothLinks = document.querySelectorAll('a[href^="#"]');
@@ -125,10 +136,6 @@ for (let smoothLink of smoothLinks) {
 document.querySelector('.burger-menu').onclick = function(){
   document.querySelector('.nav').classList.toggle('active');
   document.querySelector('.burger-line').classList.toggle('active');
-};
-document.querySelector('.nav-item').onclick = function(){
-  document.querySelector('.nav').classList.remove('active');
-  document.querySelector('.burger-line').classList.remove('active');
 };
 document.querySelector('.nav').onclick = function(){
   document.querySelector('.nav').classList.remove('active');

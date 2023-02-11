@@ -227,6 +227,7 @@
     width: 100%;
     height: 520px;
     object-fit: cover;
+    object-position: left;
   }
   .swiper{
     height: 650px;
@@ -942,7 +943,7 @@
   &-item{
     display: block;
     max-width: 320px;
-    width: 100%;
+    // width: 100%;
     min-height: 300px;
     padding: 40px;
     background-color: $bg-secondary;
@@ -1001,7 +1002,7 @@
     }
   }
   .swiper-button-next {
-    right: var(--swiper-navigation-sides-offset,1%);
+    right: var(--swiper-navigation-sides-offset,13px);
     left: auto;
   }
   .swiper-button-prev{
@@ -1046,7 +1047,7 @@
     color: $accent;
     font-weight: 700;
   }
-  .query-form{
+  &-form{
     padding: 40px 0 60px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1113,6 +1114,9 @@
     }
     &__mode{
       line-height: 30px;
+    }
+    &__right{
+      margin-left: 50px;
     }
     &__contact{
       display: block;
