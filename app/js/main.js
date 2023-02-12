@@ -82,14 +82,14 @@
       // type: 'progressbar',
       type: 'fraction',
     },
-    speed: 800,
+    speed: 500,
     loop: true,
     loopedSlides: 2,
     // slidesPerView: 3.2,
     slidesPerView: 1,
     slidesPerGroup: 1,
     spaceBetween: 30,
-    // centeredSlides: true,
+    centeredSlides: true,
     
     breakpoints:{
       450: {
